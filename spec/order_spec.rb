@@ -2,7 +2,6 @@ require 'spec_helper'
 
 feature 'Orders' do
   scenario 'Can see the line items and the address for an order' do
-    pending
     order = Order.create!(number: "ABC123")
 
     LineItem.create!(order_id: order.id, description: "iMac")
