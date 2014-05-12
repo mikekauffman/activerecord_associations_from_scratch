@@ -1,0 +1,14 @@
+<ul class="subscriptions">
+  <% @magazine.subscriptions.each do |subscription|%>
+    <li>
+      <%= subscription.expires_on %>
+    </li>
+    <%end%>
+</ul>
+<ul class="subscribers">
+  <% @magazine.subscribers.each do |subscriber| %>
+  <li>
+    <%= subscriber.name %>
+  </li>
+      <%end%>
+</ul>

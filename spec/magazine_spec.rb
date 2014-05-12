@@ -2,7 +2,6 @@ require 'spec_helper'
 
 feature "Magazine Subscriptions" do
   scenario "Can see the subscribers and their expiration dates for a magazine subscription" do
-    pending
     magazine = Magazine.create!(name: "Rock and Ice")
     bob = Subscriber.create!(name: "Bob Smith")
     sue = Subscriber.create!(name: "Sue Jones")
